@@ -9,10 +9,26 @@ App deployed to Heroku at https://pythonprodjangors.herokuapp.com/
 
 Django App development following [PythonPro](https://www.python.pro.br/) Course
 
+### Instruction for use
+
+1. Check the python version and define a global interpreter using pyenv:
+```bash
+pyenv which python
+pyenv global
+```
+2. Install pipenv
+```bash
+pip install pipenv
+```
+3. Check if pipenv create a .venv folder inside project directory. Edit .bash_profile or .bashrc and add:
+```bash
+export PIPENV_VENV_IN_PROJECT=1
+```
+
 #### Install the dependencies using Pipenv
 
 ```bash
-pipenv sync -d
+pipenv install
 ```
 #### Activate Virtualenv
 
