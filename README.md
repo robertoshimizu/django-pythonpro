@@ -39,3 +39,17 @@ Alternatively:
 ```bash
 pipenv shell
 ```
+
+### Remarks
+
+1. This command `python manage.py runserver` spins a Django server. In the course, it is used an alias for it, which is:
+``` 
+alias mng='python $VIRTUAL_ENV/../manage.py'
+```
+which has been registerd in the .bash_profile (mac)
+
+2. Heroku CLI, do not forget to inform the proper app. Examples:
+``` 
+heroku apps:info --app=pythonprodjangors
+heroku apps:open --app=pythonprodjangors
+```
